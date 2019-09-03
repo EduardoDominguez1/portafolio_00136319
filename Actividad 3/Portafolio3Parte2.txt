@@ -1,0 +1,18 @@
+¿Son validas las siguientes expresiones?
+
+matrix[0][0] = *(*(matrix))
+R/No es valido, modifica el valor de ese punto en la matriz	
+
+matrix[ i ][ j ] = *((*(matrix)) + (i * COLS + j))
+R/Si es valido 
+
+matrix[ i ][ j ] = *(*(matrix + i) + j)
+R/Si es valido
+
+matrix[ i ][ j ] = *(matrix[i] + j)
+R/Si es valido
+
+matrix[ i ][ j ] = (*(matrix + i))[j]
+R/No es valido
+
+Los demas cumplen con el objetivo de mostrar la direccion de alguna parte de la matriz

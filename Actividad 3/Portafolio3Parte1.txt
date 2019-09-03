@@ -1,0 +1,19 @@
+1)
+Asuma que un arreglo est´a almacenado en la memoria utilizando
+la representaci´on row-major. Si la matriz a[10][20] ya fue
+declarada y la direcci´on de su primer elemento es 100; encuentre la
+direcci´on de los siguientes elementos:
+
+a[0][0]= su direccion es: 100
+
+a[2][1]= su direccion es: 141 
+ 
+a[5][1]= su direccion es: 201
+
+a[1][10]= su direccion es:130
+
+a[2][10]= su direccion es:150
+
+a[5][3]= su direccion es: 203
+
+a[9][19]= su direccion es: 299
