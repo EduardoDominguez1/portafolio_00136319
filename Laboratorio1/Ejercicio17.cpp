@@ -27,7 +27,5 @@ cout << "La suma de los enteros es: " << suma << endl;
 promedio = suma/10;
 cout << "El promedio de los enteros es: " << promedio << endl;
 
-	
-	
 	return 0;
 }
