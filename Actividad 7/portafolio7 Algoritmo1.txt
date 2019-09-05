@@ -1,0 +1,30 @@
+Septima actividad de portafolio
+
+Obtener el segundo elemento de una pila de arriba(top) hacia abajo; dejando la pila sin sus elementos de arriba.
+
+|4|  
+|3|
+|2|
+|1|
+
+1-Se tiene la pila previamente hecha xd
+(Recordando: Buscamos tener el segundo elemento de arriba a abajo.)
+
+2-Se debera hacer un pop para sacar el primer elemento de arriba hacia abajo y se igualara a una variable i = pop(s)
+
+3-Se vuelve a hacer un pop y sacariamos de la pila el segundo elemento de arriba hacia abajo y se igualaria de igual forma a la variable que teniamos anteriormente i = pop(s).
+
+4-Solo faltaria hacer un cout que imprime la variable.
+
+" cout << "El segundo elemento... " << i << endl; "
+
+5-Listo ya tenemos la segunda variable de arriba hacia abajo dejando la pila sin sus elementos de arriba.
+
+Resumen:
+
+| | -> 1er pop lo saca y guarda en variable.
+| |->2do pop lo saca y sobreescribe la variable.
+|2|
+|1|
+
+i = pop(s) -> tendria la variable 

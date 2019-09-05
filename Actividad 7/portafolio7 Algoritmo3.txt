@@ -1,0 +1,41 @@
+3) Obtenga el elemento que se encuentra al fondo de la pila, dejando la pila vacia.
+
+
+Aqui ya esta hecha la pila.
+
+[n]
+.
+.
+.
+[5] 
+[4] 
+[3]
+[2]
+[1]
+
+Obtener el dato que se encuentra en la ultima posicion ([1]).
+
+1- Mientras la pila no este vacia hay que ir sacando los valores para poder llegar al ultimo valor.
+
+while(pila != empty){
+
+2-Igualamos la variable al valor que vamos a sacar de a pila.
+
+Variale = pop(s)
+
+Tendremos la variable igualada al valor sacado de la pila. 
+
+}
+
+3- Salimos del while y se vuelve a repetir hasta que la pila no este vacia.
+
+4- Una vez haya terminado el cilo del while la pila debera estar vacia y la variable estara igalada al ultimo valor sacado de la pila, y este es el que buscamos.
+
+cout<<"El ultimo valor de la pila es: "<
+5- Entonces podemos mostrar el valor de la variable, es decir el valor del ulltimo dato de la pila.
+
+Resumen:
+1) Declaramos la pila o utilizamos una ya hecha 
+2) Hacemos un ciclo que no termine asta que la fila este vacia
+3) Dentro del ciclo igualamos una variable a cada valor que vamos sacando, sustituendo el anterior para asi dejar unicamente el ultimo valor sacado
+4) Mostramos el valor contenido en la variable que es el ultimo valor de la pila.
