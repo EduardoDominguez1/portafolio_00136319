@@ -1,0 +1,19 @@
+Decima actividad de portafolio
+
+Convertir en manera intuitiva a forma postfija.
+
+expresion1:   A-B/(C*D$E) 
+
+A-B/(C*D$E) 
+A-B/(C*DE$)
+A-B/(CDE$*)
+A-B(CDE$*)/
+AB-CDE$*/
+ABCDE$*/-
+
+expresion2:   ((A+B)*C-(D-E))$(F+G)
+
+((A+B)*C-(D-E))$(F+G)
+((AB+C*-(DE-))$(FG+)
+(AB+C*DE--)$(FG+)
+AB+C*DE--FG+$
