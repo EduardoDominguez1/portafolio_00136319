@@ -1,4 +1,5 @@
 //Ejercicio 7 Elabore una funcion que recibe como parametro una lista simple y un numero entero.Luego elimine de esas listas todas las ocurrencias
+//Compila en lo de C++ Online XDDD en Dev se queda congelado al eliminar dato (y si pones muchos datos en lista se buguea)
 #include <iostream>
 using namespace std;
 
@@ -9,15 +10,11 @@ struct TNodo{
 typedef struct TNodo Nodo;
 Nodo *pInicio;
 
-void insertarInicio(int num) {
-    Nodo *nuevo = new Nodo;
-    nuevo->dato = num;
-    nuevo->sig = pInicio;
-   
-    pInicio = nuevo;
-}
-
-void insertarFinal(int num) {
+void insertar() {
+	int num = 0;
+	cout<<"Que numero desea insertar: "<<endl;
+	cin >> num;
+	
     Nodo *nuevo = new Nodo;
     nuevo->dato = num;
     nuevo->sig = NULL;
@@ -35,30 +32,6 @@ void insertarFinal(int num) {
     }
 }
 
-void agregarNumero(){
-    int num = 0;
-    cout << "Numero: ";
-    cin >> num;
-   
-    bool continuar = true;
-    do{
-        int opcion = 0;
-        cout << "\t1) Al principio\n\t2) Al final"
-            << "\n\tOpcion elegida: ";
-        cin >> opcion;
-        switch(opcion){
-            case 1: insertarInicio(num);
-                continuar = false;
-            break;
-            case 2: insertarFinal(num);
-                continuar = false;
-            break;
-            default: cout << "Opcion erronea!" << endl;
-            break;
-        }
-    }while(continuar);
-}
-
 void mostrarLista() {
     Nodo *s = pInicio;
 
@@ -69,24 +42,32 @@ void mostrarLista() {
 }
 
 void borrarOcurrencias(){
-    Nodo *s = pInicio;
-    int borrar=0;
+    int n=0,borrar=0;
+
     cout<<"Que dato desea borrar de la lista:"<<endl;
     cin>>borrar;
-    if(pInicio==nullptr){
+    
+	Nodo *s = NULL;
+	Nodo *aux = NULL;
+    s=pInicio;
+    
+	if(s==NULL){
         cout<<"La lista esta vacia"<<endl;
-    }else if(borrar!=s->dato){
-        //Quiero que compare y si es diferente que apunte al siguiente.
-        s = s->sig;
-    }else{
-        //Quiero que compare y si es igual borre el dato.
-        Nodo *temp = s;
-        temp
-        delete(s);
-       
     }
-}
-
+    while(s!=NULL){
+    	
+    	if(borrar == s->dato){
+        	if(aux==NULL){
+        		pInicio = s->sig;
+        }
+	else
+      	aux->sig = s->sig;
+        delete(s);
+	   }
+	   aux=s;
+	   s=s->sig;
+    }
+} 
 
 int main(){
     cout << "Inicializando..." << endl;
@@ -100,7 +81,7 @@ int main(){
         cin >> opcion;
         switch(opcion){
             case 1: cout << "Agregando..." << endl;
-                agregarNumero();
+                insertar();
             break;
             case 2: cout << "Listando..." << endl;
                 mostrarLista();
@@ -117,5 +98,3 @@ int main(){
 
     return 0;
 }
-
-
