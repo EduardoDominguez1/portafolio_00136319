@@ -51,31 +51,13 @@ void mostrarLista() {
 }
 
 void invertirLista(){
-	Nodo *i, *j;
-	i=pInicio;
-	j=pFinal;
-	char buscado, aux;
-	bool ordenado=true;
-	buscado=i->dato;
-	while(ordenado){
-		if(i->dato==buscado){
-			ordenado=false;
-		}
-		else{
-			for(i=pInicio;i->sig!=NULL;i=i->sig){
-				j=i->sig;
-				aux=i->dato;
-				i->dato = j->dato;
-				j->dato = aux;
-
-			}
-		}
+	Nodo aux;
+	Nodo secundaria;
+	secundaria = pInicio;
+	if(pInicio!=NULL){
+		while(pInicio!=NULL)
 	}
-	while (i != NULL) {
-        cout << (i->dato) << endl;
-        i = i->sig;
 }
-}//No logre invertirla ): 
 
 int main(){
     cout << "Inicializando..." << endl;

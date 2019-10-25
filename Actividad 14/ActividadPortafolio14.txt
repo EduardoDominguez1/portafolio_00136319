@@ -1,0 +1,60 @@
+#Actividad 14 de portafolio
+
+*Árbol 1:
+Raíz:A
+Ramas:B,D,C,E
+Hojas:G,H,I,F
+
+-Nivel de cada nodo:
+0:A
+1:B,C
+2:D,E,F
+3:G,H,I
+
+-La profundidad es de: 3
+-Peso: 9
+-Orden: 2
+
+-Sub-árbol:
+Raíz:C
+Ramas:E
+Hojas:H,I,F
+
+-El árbol es: No lleno
+-El árbol es: No perfecto (por hoja F)
+
+-Recorridos:
+In-Orden:G,D,B,A,H,E,I,C,F
+Pre-Orden:A,B,D,G,C,E,H,I,F
+Post-Orden:G,D,B,H,I,E,F,C,A
+
+
+
+*Árbol 2:
+Raíz:A
+Ramas:B,C,E,F,D,H
+Hojas:I,J,G,K,L
+
+-Nivel de cada nodo:
+0:A
+1:B
+2:C,D
+3:E,F,G,H
+4:I,J,K,L
+
+-La profundidad es de: 4
+-Peso: 12
+-Orden: 2
+
+-Sub-árbol:
+Raíz:D
+Ramas:H
+Hojas:G,K,L
+
+-El árbol es: No lleno
+-El árbol es: No perfecto (por hoja G)
+
+-Recorridos:
+In-Orden:I,E,C,F,J,B,A,G,D,K,H,L
+Pre-Orden:A,B,C,E,I,F,J,D,G,H,K,L
+Post-Orden:I,E,J,F,C,G,K,L,H,D,B,A
