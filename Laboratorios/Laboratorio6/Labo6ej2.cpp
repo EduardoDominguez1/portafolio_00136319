@@ -98,22 +98,7 @@ void recorrerArbol(Arbol a){
     cout << "Recorrido IN orden:"; inorden(a); cout << endl;
     cout << "Recorrido POST orden:"; postorden(a); cout << endl;
 }
-void quemar(){
-	Arbol arbol = crearArbol(5);//La raiz es 5
-    agregarNodo(arbol,1);
-    agregarNodo(arbol,4);
-    agregarNodo(arbol,6);
-    agregarNodo(arbol,49);
-    agregarNodo(arbol,27);
-    agregarNodo(arbol,20);
-    agregarNodo(arbol,13);
-    agregarNodo(arbol,45);
-    agregarNodo(arbol,34);
-    agregarNodo(arbol,22);
-    agregarNodo(arbol,11);
-    agregarNodo(arbol,14);
-    agregarNodo(arbol,55);
-}
+
 
 //FuncionPrincipal
 void voltear(Arbol a){
@@ -129,7 +114,7 @@ void voltear(Arbol a){
 }
 
 int main(){
-  	
+  	cout<<"Lab6ej2 Invertir subarboles"<<endl;
   	Arbol arbol = crearArbol(5);//La raiz es 5
     agregarNodo(arbol,1);
     agregarNodo(arbol,4);
@@ -147,13 +132,11 @@ int main(){
     
 int variable = 0;
     cout<<"Inicializando arbol..."<<endl;
-   
-    quemar();
-   
+
     bool continuar = true;
     do{
         int opcion = 0;
-        cout << "Menu: \n\t1) Buscar y mostrar lista\n\t2) Recorrer"
+        cout << "Menu: \n\t1) Invertir SubArboles\n\t2) Recorrer"
             << "\n\t3) Salir\n\tOpcion elegida: ";
         cin >> opcion;
         switch(opcion){
